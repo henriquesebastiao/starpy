@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "starpy"
+version = "0.1.0"
+description = ""
+authors = ["Henrique Sebastião <contato@henriquesebastiao.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+coverage = "^7.4.0"
+pytest-cov = "^4.1.0"
+taskipy = "^1.12.2"
+blue = "^0.9.1"
+ruff = "^0.1.14"
+isort = "^5.13.2"
+
+[tool.poetry.scripts]
+starpy = "starpy.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.coverage.run]
+branch = true
+omit = ["**/*test*.py"]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+python_files = "test.py tests.py test_*.py tests_*.py *_test.py *_tests.py"
+
+[tool.taskipy.tasks]
+lint = "ruff . && blue --check . --diff && isort --check --diff ."
+format = "blue .  && isort ."
+doc = "mkdocs serve"
+pre_test = "task lint"
+test = "pytest -s -x --cov=starpy -vv"
+post_test = "coverage run -m pytest && coverage html"
