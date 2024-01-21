@@ -18,7 +18,7 @@ HOST = 'https://api.nasa.gov/'
 NASA_API_KEY = os.getenv('NASA_API_KEY', 'DEMO_KEY')
 date_now = datetime.now().date().isoformat()
 
-app = typer.Typer()
+app = typer.Typer(help='StarPy is a cli for obtaining information from astronomical objects.')
 console = Console()
 
 
