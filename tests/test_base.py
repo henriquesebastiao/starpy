@@ -35,7 +35,7 @@ class CliUnitTest(TestCase):
 
     def test_cli_print_help_message_if_without_args(self):
         result = self.invoke()
-        self.assertIn('MENSAGEM', result.output)
+        self.assertIn('USAGE', result.output)
 
     def test_remaining_requests(self):
         response = requests.get(
