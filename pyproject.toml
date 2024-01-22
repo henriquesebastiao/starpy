@@ -19,6 +19,18 @@ blue = "^0.9.1"
 ruff = "^0.1.14"
 isort = "^5.13.2"
 
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.5.4"
+mkdocstrings = "^0.24.0"
+mkdocstrings-python = "^1.8.0"
+mkdocs-macros-plugin = "^1.0.5"
+jinja2 = "^3.1.3"
+pygments = "^2.17.2"
+pymdown-extensions = "^10.7"
+mkdocs-git-committers-plugin-2 = "^2.2.3"
+mkdocs-git-authors-plugin = "^0.7.2"
+mkdocs-git-revision-date-localized-plugin = "^1.2.2"
+
 [tool.poetry.scripts]
 starpy = "starpy.cli:app"
 
@@ -50,3 +62,5 @@ pre_test = "task lint"
 test = "pytest -x --cov=starpy -vv"
 post_test = "coverage run -m pytest && coverage html"
 pre-commit = "task lint && pytest -x --cov=starpy -vv && coverage run -m pytest && coverage html"
+build = "poetry build"
+run = "poetry run starpy"

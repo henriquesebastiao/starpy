@@ -18,20 +18,24 @@ HOST = 'https://api.nasa.gov/'
 NASA_API_KEY = os.getenv('NASA_API_KEY', 'DEMO_KEY')
 date_now = datetime.now().date().isoformat()
 
-app = typer.Typer(help='StarPy is a cli for obtaining information from astronomical objects.')
+app = typer.Typer(
+    help='Starpy is a CLI for obtaining information from astronomical objects.'
+)
 console = Console()
 
 
 def get_version(value: bool):
+    """Returns the version of Starpy and exits the program"""
     if value:
         console.print(
-            f'[bold blue]StarPy[/bold blue] version: [green]{__version__}[/green]',
+            f'[bold blue]Starpy[/bold blue] version: [green]{__version__}[/green]',
         )
         console.print('Developed by [bold]Henrique Sebastião[/bold]')
         raise typer.Exit()
 
 
-def remaining_api(response: requests.Response):
+def remaining_api(response: requests.Response) -> str:
+    """Returns the number of remaining requests to the API in a string"""
     limit = response.headers.get('X-RateLimit-Remaining', None)
     if limit is None:
         return '\nAPI limit information not found.'
@@ -39,6 +43,10 @@ def remaining_api(response: requests.Response):
 
 
 def download_image(url: str):
+    """
+    Download the image from the url passed as a parameter
+    and print a message informing that the image has been saved.
+    """
     with Progress(
         SpinnerColumn(),
         TextColumn('[progress.description]{task.description}'),
@@ -61,7 +69,7 @@ def main(
             '--version',
             '-v',
             callback=get_version,
-            help='Returns the version of StarPy',
+            help='Returns the version of Starpy',
         ),
     ] = None,
 ):
@@ -84,7 +92,9 @@ There are 1 commands available:
     console.print(message)
 
 
-@app.command()
+@app.command(
+    help='Astronomy Picture of the Day (APOD) https://apod.nasa.gov/apod/'
+)
 def apod(
     date: Annotated[
         str,
@@ -104,6 +114,24 @@ def apod(
         ),
     ] = False,
 ):
+    """
+    Astronomy Picture of the Day (APOD)
+
+    https://apod.nasa.gov/apod/
+
+    APOD highlights an interesting astronomical image or photograph every day,
+    accompanied by a brief description written by a professional astronomer.
+    These images can encompass a variety of celestial objects,
+    such as stars, galaxies, nebulae, planets, and other cosmic phenomena.
+
+    - When executed without passing any option, information about the current day's image will be returned.
+    - It is possible to enter a date in the past to search for the image of the day with the -d flag.
+
+    Args:
+        date: Date to search for the image of the day
+        save_image: Option to download the image
+        remaining: Option to tell how many requests remain for the API
+    """
     url = HOST + 'planetary/apod'
 
     with Progress(
