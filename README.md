@@ -48,7 +48,7 @@ starpy apod
 
 #### Requesting an image from a specific day
 
-```console
+```bash
 starpy apod -d 2022-01-01
 ```
 
