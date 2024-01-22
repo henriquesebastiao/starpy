@@ -1,8 +1,20 @@
 <p align="center">
-    <img src="docs/assets/starpy-slogan-black.svg" alt="Preview" width="400"/>
+    <img src="docs/assets/starpy-slogan-white.svg" alt="Preview" width="400"/>
 </p>
 
 <p align="center"><i>Always looking at the sky.</i></p>
+
+<p align="center">
+    <a href="https://github.com/henriquesebastiao/starpy/actions/workflows/ci.yml">
+        <img src="https://github.com/henriquesebastiao/starpy/actions/workflows/ci.yml/badge.svg" alt="CI status"/>
+    </a>
+    <a href="https://codecov.io/gh/henriquesebastiao/starpy" > 
+        <img src="https://codecov.io/gh/henriquesebastiao/starpy/graph/badge.svg?token=EG2ZrqIKiH" alt="Codecov status"/> 
+    </a>
+    <a href="https://github.com/henriquesebastiao/starpy/blob/main/LICENSE">
+        <img alt="LICENSE" src="https://img.shields.io/badge/license-BEER_WARE-red"/>
+    </a>
+</p>
 
 # Starpy
 
