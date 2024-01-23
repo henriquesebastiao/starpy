@@ -39,7 +39,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          export NASA_API_KEY="ZJxTfXzYrL819SNX0ex89YUDoSmw2htRWZfiEiPD"
       - name: Run Tests
         run: pytest -s -x --cov=skyport -vv
       - name: Upload coverage reports to Codecov
