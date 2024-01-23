@@ -1,9 +1,29 @@
 [tool.poetry]
-name = "starpy"
+name = "skyport"
 version = "0.1.0"
-description = ""
+description = "Skyport is a cli for obtaining information from astronomical objects."
 authors = ["Henrique Sebastião <contato@henriquesebastiao.com>"]
 readme = "README.md"
+packages = [{include = "skyport"}]
+classifiers = [
+    "Environment :: Console",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Education",
+    "Topic :: Office/Business :: News/Diary",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.urls]
+"Documentation" = "https://skyport.henriquesebastiao.com"
+"Homepage" = "https://skyport.henriquesebastiao.com"
+"Repository" = "https://github.com/henriquesebastiao/skyport"
+"Bug Tracker" = "https://github.com/henriquesebastiao/skyport/issues"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -32,7 +52,7 @@ mkdocs-git-authors-plugin = "^0.7.2"
 mkdocs-git-revision-date-localized-plugin = "^1.2.2"
 
 [tool.poetry.scripts]
-starpy = "starpy.cli:app"
+skyport = "skyport.cli:app"
 
 [build-system]
 requires = ["poetry-core"]
@@ -59,8 +79,10 @@ lint = "ruff . && blue --check . --diff && isort --check --diff ."
 format = "blue .  && isort ."
 doc = "mkdocs serve"
 pre_test = "task lint"
-test = "pytest -x --cov=starpy -vv"
+test = "pytest -x --cov=skyport -vv"
 post_test = "coverage run -m pytest && coverage html"
-pre-commit = "task lint && pytest -x --cov=starpy -vv && coverage run -m pytest && coverage html"
+pre-commit = "task lint && pytest -x --cov=skyport -vv && coverage run -m pytest && coverage html"
 build = "poetry build"
-run = "poetry run starpy"
+check = "twine check dist/*"
+publish = "poetry publish --build"
+run = "poetry run skyport"

@@ -5,11 +5,11 @@ To install the cli, I recommend using pipx:
 <div class="termy">
 
 ```console
-$ pipx install starpy
+$ pipx install skyport
 ---> 100%
-installed package <strong>starpy {{variables.version}}</strong>, installed using Python 3.11
+installed package <strong>skyport {{variables.version}}</strong>, installed using Python 3.11
 These apps are now globally available
-  - starpy
+  - skyport
 done! ✨ 🌟 ✨
 ```
 
@@ -18,5 +18,5 @@ done! ✨ 🌟 ✨
 But anyway, this is just a recommendation. You can also install using the manager you prefer. Like pip:
 
 ```bash
-pip install starpy
+pip install skyport
 ```

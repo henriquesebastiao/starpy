@@ -19,16 +19,16 @@ NASA_API_KEY = os.getenv('NASA_API_KEY', 'DEMO_KEY')
 date_now = datetime.now().date().isoformat()
 
 app = typer.Typer(
-    help='Starpy is a CLI for obtaining information from astronomical objects.'
+    help='Skyport is a CLI for obtaining information from astronomical objects.'
 )
 console = Console()
 
 
 def get_version(value: bool):
-    """Returns the version of Starpy and exits the program"""
+    """Returns the version of Skyport and exits the program"""
     if value:
         console.print(
-            f'[bold blue]Starpy[/bold blue] version: [green]{__version__}[/green]',
+            f'[bold blue]Skyport[/bold blue] version: [green]{__version__}[/green]',
         )
         console.print('Developed by [bold]Henrique Sebastião[/bold]')
         raise typer.Exit()
@@ -69,23 +69,23 @@ def main(
             '--version',
             '-v',
             callback=get_version,
-            help='Returns the version of Starpy',
+            help='Returns the version of Skyport',
         ),
     ] = None,
 ):
-    message = """USAGE: starpy [OPTIONS] COMMAND [OPTIONS]
+    message = """USAGE: skyport [OPTIONS] COMMAND [OPTIONS]
 
 There are 1 commands available:
 
 - [bold]apod[/bold]: Returns the image of the day from NASA's
 
 [bold]Examples:[/bold]
-[italic yellow]starpy apod[/italic yellow] (search for the image of the day)
-[italic yellow]starpy apod -d 2021-01-01[/italic yellow] (search for the image of the day on the date)
-[italic yellow]starpy apod -s[/italic yellow] (download the image)
+[italic yellow]skyport apod[/italic yellow] (search for the image of the day)
+[italic yellow]skyport apod -d 2021-01-01[/italic yellow] (search for the image of the day on the date)
+[italic yellow]skyport apod -s[/italic yellow] (download the image)
 
-[bold]For more information:[/bold] [italic cyan]starpy --help[/italic cyan]
-[bold]For more detailed information:[/bold] [cyan][link=https://github.com/henriquesebastiao/starpy]repository[/cyan]
+[bold]For more information:[/bold] [italic cyan]skyport --help[/italic cyan]
+[bold]For more detailed information:[/bold] [cyan][link=https://github.com/henriquesebastiao/skyport]repository[/cyan]
 """
     if ctx.invoked_subcommand:
         return

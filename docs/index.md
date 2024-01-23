@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets/starpy-slogan-black.svg" alt="Preview" width="400"/>
+    <img src="assets/skyport-slogan-black.svg" alt="Preview" width="400"/>
 </p>
 
 <p align="center"><i>Always looking at the sky.</i></p>

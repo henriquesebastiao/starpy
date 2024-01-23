@@ -72,9 +72,9 @@ very Full Moon of 2021 shines in this year-spanning astrophoto project, a compos
 You can also get help for the apod subcommand with the `--help` flag:
 
 ```{ .txt .no-copy }
-$ starpy apod --help
+$ skyport apod --help
 
-Usage: starpy apod [OPTIONS]                                                
+Usage: skyport apod [OPTIONS]                                                
                                                                              
 Astronomy Picture of the Day (APOD) https://apod.nasa.gov/apod/             
                                                                              

@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="docs/assets/starpy-slogan-white.svg" alt="Preview" width="400"/>
+    <img src="docs/assets/skyport-slogan-white.svg" alt="Preview" width="400"/>
 </p>
 
 <p align="center"><i>Always looking at the sky.</i></p>
@@ -35,13 +35,13 @@ So far, the entire CLI is based on NASA's open APIs for getting images and infor
 To install the cli, I recommend using pipx:
 
 ```bash
-pipx install starpy
+pipx install skyport
 ```
 
 But anyway, this is just a recommendation. You can also install using the manager you prefer. Like pip:
 
 ```bash
-pip install starpy
+pip install skyport
 ```
 
 ## How to use?
@@ -53,7 +53,7 @@ pip install starpy
 You can call APOD (Astronomical Image of the Day) through the command line. Example:
 
 ```bash
-starpy apod
+skyport apod
 ```
 
 > This was the image of the day on the date January 21, 2024. Which was when this part of the documentation was written 😅
@@ -61,7 +61,7 @@ starpy apod
 #### Requesting an image from a specific day
 
 ```bash
-starpy apod -d 2022-01-01
+skyport apod -d 2022-01-01
 ```
 
 ## More information about the CLI

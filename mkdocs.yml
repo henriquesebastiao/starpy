@@ -1,12 +1,12 @@
-site_name: Starpy Documentation
-site_url: https://starpy.henriquesebastiao.com/
-repo_url: https://github.com/henriquesebastiao/starpy
-repo_name: henriquesebastiao/starpy
+site_name: Skyport Documentation
+site_url: https://skyport.henriquesebastiao.com/
+repo_url: https://github.com/henriquesebastiao/skyport
+repo_name: henriquesebastiao/skyport
 
 copyright: 2024 - Henrique Sebastião
 
 nav:
-  - Starpy: index.md
+  - Skyport: index.md
   - Tutorial:
       - Get started: tutorial/index.md
       - Astronomy Picture of the Day: tutorial/apod.md
@@ -14,8 +14,8 @@ nav:
 
 theme:
   name: material
-  logo: assets/starpy-logo.svg
-  favicon: assets/starpy-logo.svg
+  logo: assets/skyport-logo.svg
+  favicon: assets/skyport-logo.svg
   font:
     text: Roboto
     code: Source Code Pro
@@ -80,19 +80,19 @@ plugins:
   - search
   - git-authors
   - git-committers:
-      repository: henriquesebastiao/starpy
+      repository: henriquesebastiao/skyport
       branch: main
   - git-revision-date-localized:
       type: date
 
 extra:
   commands:
-    run: starpy
+    run: skyport
   variables:
     version: 0.1.0
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/henriquesebastiao/starpy
+      link: https://github.com/henriquesebastiao/skyport
       name: github.com/henriquesebastiao
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/hick_hs

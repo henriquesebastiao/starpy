@@ -1,6 +1,6 @@
 # Intro
 
-If you've made it this far, it means you want to know more about how `starpy` works.
+If you've made it this far, it means you want to know more about how `skyport` works.
 
 The purpose of this CLI is to help astronomy enthusiasts and science lovers in general (who have a taste for technology :smile:) find information about objects in the cosmos quickly and easily.
 
@@ -8,7 +8,7 @@ The purpose of this CLI is to help astronomy enthusiasts and science lovers in g
 
 ## Creating a NASA API Key
 
-By default, you do not need to create an API key to use starpy, however the key used by default is the DEMO_KEY provided by NASA, which has the following limits:
+By default, you do not need to create an API key to use skyport, however the key used by default is the DEMO_KEY provided by NASA, which has the following limits:
 
 - Hourly Limit: 30 requests per IP address per hour
 - Daily Limit: 50 requests per IP address per day
@@ -30,7 +30,7 @@ Now define an environment variable on the machine with the name `NASA_API_KEY` w
 echo 'export NASA_API_KEY="yor-api-key"' | sudo tee -a /etc/profile
 ```
 
-Now restart your system. After this configuration, `starpy` will be able to read your API key when run.
+Now restart your system. After this configuration, `skyport` will be able to read your API key when run.
 
 ## General information
 
@@ -61,7 +61,7 @@ More information at: <a href="https://api.nasa.gov/">https://api.nasa.gov/</a>
 
 ## The commands
 
-`starpy` separates each of its features into subcommands that can be executed with or without passing parameters. The objective of this tutorial is to explain how the application works in command line.
+`skyport` separates each of its features into subcommands that can be executed with or without passing parameters. The objective of this tutorial is to explain how the application works in command line.
 
 **The currently available commands are:**
 

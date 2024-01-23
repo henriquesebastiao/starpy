@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for being interested in contributing to Starpy :heart:! This document lists all the guidance you may need to contribute.
+Thank you for being interested in contributing to Skyport :heart:! This document lists all the guidance you may need to contribute.
 
 ## How does the project work?
 
@@ -9,19 +9,19 @@ Thank you for being interested in contributing to Starpy :heart:! This document 
 ```mermaid
 flowchart
     . --> docs
-    . --> starpy
+    . --> skyport
     . --> tests
 ```
 
-The project is divided into three directories. `docs`, `starpy` and `tests`. Where each directory has its specific function.
+The project is divided into three directories. `docs`, `skyport` and `tests`. Where each directory has its specific function.
 
-#### starpy
+#### skyport
 
 ```mermaid
 flowchart
-    . --> starpy
-        starpy --> __init__.py
-        starpy --> cli.py
+    . --> skyport
+        skyport --> __init__.py
+        skyport --> cli.py
 ```
 
 All CLI code is written in the cli.py file. The docstrings follow the [google docstring](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html) standard. So, if you change anything in the code, remember to also update the docstrings.
@@ -34,21 +34,21 @@ For rich responses in the application output, the [Rich](https://rich.readthedoc
 
 The only convention that is being followed regarding the CLI is that a rich `Console` object has already been defined and a `Typer` app. It would be interesting for you to continue using these objects
 
-```{ .py .no-copy title="starpy/cli.py"}
+```{ .py .no-copy title="skyport/cli.py"}
 import typer
 from rich.console import Console
 
 ...
 
 app = typer.Typer(
-    help='Starpy is a CLI for obtaining information from astronomical objects.'
+    help='Skyport is a CLI for obtaining information from astronomical objects.'
 )
 console = Console()
 ```
 
 #### Tests
 
-For testing we are using [pytest](https://docs.pytest.org/). Its settings can be found in the [pyproject.toml](https://github.com/henriquesebastiao/starpy/blob/main/pyproject.toml) file in the root of our project.
+For testing we are using [pytest](https://docs.pytest.org/). Its settings can be found in the [pyproject.toml](https://github.com/henriquesebastiao/skyport/blob/main/pyproject.toml) file in the root of our project.
 
 Test coverage is being generated automatically with [pytest-cov](https://github.com/pytest-dev/pytest-cov) and is displayed when the test task is executed:
 
@@ -78,7 +78,7 @@ flowchart
     . --> mkdocs.yml
 ```
 
-All configuration can be found in the [mkdocs.yml](https://github.com/henriquesebastiao/starpy/blob/main/mkdocs.yml) file in the root of the repository.
+All configuration can be found in the [mkdocs.yml](https://github.com/henriquesebastiao/skyport/blob/main/mkdocs.yml) file in the root of the repository.
 
 Various devices are also being used to complement the documentation. Like [jinja](https://jinja.palletsprojects.com/en/3.1.x/) templates in places where instructions can be repeated. If you find blocks like:
 
@@ -93,7 +93,7 @@ Templates are defined in the `/docs/templates` directory. In some cases, however
 ```{ .yaml .no-copy title="mkdocs.yml"}
 extra:
   commands:
-    run: starpy 
+    run: skyport 
 ```
 
 ## Tools
@@ -122,7 +122,7 @@ Listed here are commands that you can use to perform common tasks. How to clone 
 <div class="termy">
 
 ```console
-$ git clone https://github.com/henriquesebastiao/starpy.git
+$ git clone https://github.com/henriquesebastiao/skyport.git
 ```
 
 </div>
@@ -196,7 +196,7 @@ Currently, the focus is on implementing all [public APIs made available by NASA]
 
 ## I didn't find what I needed here
 
-If you haven't found what you need, you can open an [issue in the project](https://github.com/henriquesebastiao/starpy/issues) reporting what you can't do or what needs to be better documented.
+If you haven't found what you need, you can open an [issue in the project](https://github.com/henriquesebastiao/skyport/issues) reporting what you can't do or what needs to be better documented.
 
 ## Continuous improvement
 

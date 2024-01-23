@@ -4,7 +4,7 @@ from unittest import TestCase
 import requests
 from typer.testing import CliRunner, Result
 
-from starpy.cli import app, download_image, remaining_api
+from skyport.cli import app, download_image, remaining_api
 
 
 def check_result_error(result: Result):
