@@ -7,11 +7,6 @@ from typer.testing import CliRunner, Result
 from skyport.cli import app, download_image, remaining_api
 
 
-def check_result_error(result: Result):
-    if result.exit_code == 1:
-        assert 'Too many requests' in result.output
-
-
 class CliUnitTest(TestCase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

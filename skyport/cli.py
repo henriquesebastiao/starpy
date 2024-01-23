@@ -167,3 +167,4 @@ def apod(
     else:
         console.print(WARNING)
         pprint(response.json())
+        raise typer.Exit(code=1)

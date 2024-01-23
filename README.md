@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="docs/assets/skyport-slogan-white.svg" alt="Preview" width="400"/>
+    <a href="https://skyport.henriquesebastiao.com"><img src="docs/assets/skyport-slogan-black.svg" alt="Skyport" width="400"></a>
 </p>
 
 <p align="center"><i>Always looking at the sky.</i></p>
