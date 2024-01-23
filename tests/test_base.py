@@ -17,9 +17,6 @@ class CliUnitTest(TestCase):
         super().__init__(*args, **kwargs)
         self.runner = CliRunner()
 
-    def setUp(self):
-        os.environ['NASA_API_KEY'] = '0F0KeeYZ7axdckLa9VyRQZGTslLkkl6tmbdcapaj'
-
     def invoke(self, *flags: str) -> Result:
         """
         Simplify the invoke of the app for tests
