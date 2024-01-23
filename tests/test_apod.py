@@ -16,6 +16,7 @@ class ApodTest(CliUnitTest):
         pprint(response.headers)
         result = self.invoke('apod', '-r')
         if result.exit_code == 0:
+            print('\n'+result.output)
             self.assertIn('Remain', result.output)
         check_result_error(result)
 

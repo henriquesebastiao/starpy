@@ -164,4 +164,7 @@ def apod(
         )
         raise typer.Exit(code=1)
     else:
+        console.print(response.status_code)
+        console.print(response.headers)
+        console.print(response.json())
         console.print(WARNING)
