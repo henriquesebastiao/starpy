@@ -15,7 +15,7 @@ WARNING = (
 
 # Settings for consuming Nasa API
 HOST = 'https://api.nasa.gov/'
-NASA_API_KEY = os.getenv('NASA_API_KEY', 'DEMO_KEY')
+NASA_API_KEY = os.getenv('NASAAPI_KEY', 'DEMO_KEY')
 date_now = datetime.now().date().isoformat()
 
 app = typer.Typer(

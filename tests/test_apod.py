@@ -1,10 +1,12 @@
 import os
+from os import getenv
 
 from .test_base import CliUnitTest, check_result_error
 
 
 class ApodTest(CliUnitTest):
     def test_return_with_remaining_option_of_apod(self):
+        print('\n' + '>>>>> ' + getenv('NASA_API_KEY'))
         result = self.invoke('apod', '-r')
         if result.exit_code == 0:
             self.assertIn('Remain', result.output)
