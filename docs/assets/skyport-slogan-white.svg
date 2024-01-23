@@ -2,11 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1896.6744"
-   height="746.49908"
-   viewBox="0 0 501.82842 197.51122"
+   width="1897.947"
+   height="693.83081"
+   viewBox="0 0 502.16512 183.57608"
    version="1.1"
    id="svg1"
+   sodipodi:docname="skyport-slogan-black.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,44 +28,37 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.0854277,-44.119379)">
+     transform="translate(-2.917955,-51.08699)">
     <g
-       id="g5">
+       id="g2">
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:147.867px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';letter-spacing:-17.1732px;fill:#ffffff;stroke-width:12.3222"
-         x="62.746521"
-         y="212.94438"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:125.322px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';letter-spacing:-14.5548px;fill:#ffffff;stroke-width:10.4435"
+         x="72.325371"
+         y="210.35059"
          id="text1"><tspan
            sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';letter-spacing:-17.1732px;fill:#ffffff;stroke-width:12.3222"
-           x="62.746521"
-           y="212.94438"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';letter-spacing:-14.5548px;fill:#ffffff;stroke-width:10.4435"
+           x="72.325371"
+           y="210.35059"
            id="tspan2"
-           dx="0">Starpy</tspan></text>
-      <g
-         id="g4">
-        <g
-           id="g3"
-           transform="matrix(0.5382383,0,0,0.5382383,54.067789,77.158281)">
-          <path
-             id="path6"
-             d="M 14.090339,-61.383405 C -0.00313378,21.903906 -11.433134,33.333907 -94.720798,47.42738 -11.433134,61.524381 -0.00313378,72.954382 14.090339,156.24169 28.18734,72.954382 39.617341,61.524381 122.90465,47.42738 39.617341,33.333907 28.18734,21.903906 14.090339,-61.383405"
-             style="fill:#edcc2b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0352778" />
-          <path
-             id="path7"
-             d="m -49.68977,14.876573 c 4.479219,-26.465391 8.110009,-30.095475 34.573635,-34.575753 -26.463626,-4.47675 -30.094416,-8.110361 -34.573635,-34.572224 -4.478867,26.461863 -8.110009,30.095474 -34.574341,34.572224 26.464332,4.480278 30.095474,8.110362 34.574341,34.575753"
-             style="fill:#edcc2b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0352778" />
-          <path
-             id="path8"
-             d="m 54.938481,-4.9142621 c 3.3655,-19.8825569 6.096,-22.6095289 25.975029,-25.9750289 -19.879029,-3.365501 -22.609529,-6.092473 -25.975029,-25.97503 -3.361973,19.882557 -6.092473,22.609529 -25.971502,25.97503 19.879029,3.3655 22.609529,6.092472 25.971502,25.9750289"
-             style="fill:#edcc2b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0352778" />
-          <path
-             id="path9"
-             d="M 90.667816,32.250879 C 94.033317,12.368322 96.763817,9.64135 116.64285,6.2758497 96.763817,2.9103495 94.033317,0.18337713 90.667816,-19.69918 87.305844,0.18337713 84.575344,2.9103495 64.696315,6.2758497 84.575344,9.64135 87.305844,12.368322 90.667816,32.250879"
-             style="fill:#edcc2b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0352778" />
-        </g>
-      </g>
+           dx="0">Skyport</tspan></text>
+      <path
+         id="path6"
+         d="m 67.607134,51.08699 c -8.378694,49.51504 -15.17393,56.31028 -64.689179,64.68897 49.515249,8.38079 56.310485,15.17603 64.689179,64.69106 C 75.987925,130.95199 82.783161,124.15675 132.2982,115.77596 82.783161,107.39727 75.987925,100.60203 67.607134,51.08699"
+         style="fill:#edcc2b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.020973" />
+      <path
+         id="path7"
+         d="M 29.689297,96.424218 C 32.352233,80.69031 34.510769,78.532193 50.243628,75.868628 34.510769,73.207161 32.352233,71.046947 29.689297,55.315137 27.026572,71.046947 24.867826,73.207161 9.1345475,75.868628 24.867826,78.532193 27.026572,80.69031 29.689297,96.424218"
+         style="fill:#edcc2b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.020973" />
+      <path
+         id="path8"
+         d="M 91.891713,84.658392 C 93.892533,72.838037 95.515839,71.216828 107.3341,69.216009 95.515839,67.215189 93.892533,65.59398 91.891713,53.773625 89.892991,65.59398 88.269685,67.215189 76.451427,69.216009 c 11.818258,2.000819 13.441564,3.622028 15.440286,15.442383"
+         style="fill:#edcc2b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.020973" />
+      <path
+         id="path9"
+         d="M 113.13312,106.7534 C 115.13394,94.93304 116.75724,93.311831 128.5755,91.311012 116.75724,89.310192 115.13394,87.688983 113.13312,75.868628 111.1344,87.688983 109.51109,89.310192 97.692832,91.311012 109.51109,93.311831 111.1344,94.93304 113.13312,106.7534"
+         style="fill:#edcc2b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.020973" />
     </g>
   </g>
 </svg>
