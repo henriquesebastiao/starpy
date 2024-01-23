@@ -11,6 +11,7 @@ class ApodTest(CliUnitTest):
     def test_return_with_remaining_option_of_apod(self):
         print('\n' + '>>>>> ' + getenv('NASA_API_KEY'))
         response = requests.get('https://api.nasa.gov/planetary/apod?api_key=' + getenv('NASA_API_KEY'))
+        print(response.status_code)
         pprint(response.json())
         pprint(response.headers)
         result = self.invoke('apod', '-r')
